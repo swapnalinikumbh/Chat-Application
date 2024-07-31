@@ -1,0 +1,79 @@
+/* globals.css */
+
+/* Define color variables */
+:root {
+  --background: #ffffff; /* White background */
+  --foreground: #000000; /* Black text */
+  --card: #f8f9fa; /* Light gray for cards */
+  --card-foreground: #212529; /* Darker gray for card text */
+  --primary: #007bff; /* Blue for primary buttons and links */
+  --primary-foreground: #ffffff; /* White text for primary buttons */
+  --secondary: #6c757d; /* Gray for secondary elements */
+  --secondary-foreground: #ffffff; /* White text for secondary buttons */
+  --muted: #f1f1f1; /* Very light gray for muted elements */
+  --muted-foreground: #6c757d; /* Gray text for muted elements */
+  --accent: #e9ecef; /* Light gray for accents */
+  --accent-foreground: #495057; /* Dark gray for accent text */
+  --destructive: #dc3545; /* Red for destructive actions */
+  --destructive-foreground: #ffffff; /* White text for destructive actions */
+  --border: #ced4da; /* Light gray for borders */
+  --input: #e9ecef; /* Light gray for input backgrounds */
+  --ring: #007bff; /* Blue for rings and highlights */
+  --radius: 0.5rem; /* Border radius */
+}
+
+/* Apply global styles */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.card {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border-radius: var(--radius);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--secondary-foreground);
+}
+
+.alert-danger {
+  background-color: var(--destructive);
+  color: var(--destructive-foreground);
+}
+
+.bg-muted {
+  background-color: var(--muted);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.border {
+  border-color: var(--border);
+}
+
+.input-group input {
+  background-color: var(--input);
+  border-color: var(--border);
+}
+
+.form-control:focus {
+  border-color: var(--ring);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-close {
+  color: var(--foreground);
+}

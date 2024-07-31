@@ -1,0 +1,93 @@
+.user-list {
+  border-radius: 12px;
+  height: 100vh;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  /* box-shadow: 0px 2px 4px 0px rgba(74, 79, 196, 0.3); */
+  max-height: 700px; /* Set a max height for the user list */
+  overflow-y: hidden; /* Hide scrollbar when not hovered */
+  transition: overflow-y 0.3s;
+}
+.user-list:hover {
+  overflow-y: auto; /* Show scrollbar on hover */
+}
+.user-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.user-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #e5e7ff;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+&.active {
+  background-color: #fff;
+  border: 1px solid rgba(66, 133, 244, 1);
+}
+&:hover {
+  background-color: #f9f9f9;
+}
+.user-item:hover {
+  background-color: #e0e0e0;
+}
+.user-avatar {
+  margin-right: 10px;
+}
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.user-name {
+  font-weight: bold;
+  font-size: 10px;
+}
+.message-time {
+  color: #999;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.last-message {
+  color: rgba(29, 27, 32, 0.6);
+  font-size: 9px;
+  align-items: start;
+  display: flex;
+}
+.user-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.message-time {
+  color: #999;
+  font-size: 8px;
+}
+
+.unread-count {
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 9px;
+  font-size: 9px;
+  margin-top: 5px;
+}

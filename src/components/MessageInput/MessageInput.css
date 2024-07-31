@@ -1,0 +1,59 @@
+.message-input-form {
+  display: flex;
+  padding: 10px;
+  position: relative;
+}
+
+.emoji-btn {
+  position: absolute;
+  border: none;
+  background-color: white;
+  color: rgba(66, 133, 244, 1);
+  border-radius: 10px;
+  cursor: pointer;
+  height: 26px;
+  width: 26px;
+  margin-top: 2px;
+}
+
+.emoji-picker {
+  position: absolute;
+  bottom: 60px;
+  left: 10px;
+  z-index: 1000;
+}
+.epr_-4ueg5a {
+  background-color: var(--epr-bg-color);
+  height: 300px !important;
+  width: 300px !important;
+}
+.message-input {
+  flex-grow: 1;
+  padding-left: 35px;
+  margin-right: 10px;
+  border: 1px solid rgba(66, 133, 244, 1);
+  border-radius: 7px;
+  height: 30px;
+  font-size: 12px;
+}
+.image-btn {
+  padding: 5px 10px;
+  border: none;
+  background-color: #f0eafb;
+  color: rgba(66, 133, 244, 1);
+  border-radius: 7px;
+  cursor: pointer;
+  height: 33px;
+}
+.send-button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  height: 33px;
+}
+.send-button:hover {
+  background-color: #0056b3;
+}

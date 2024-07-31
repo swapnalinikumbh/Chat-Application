@@ -1,0 +1,32 @@
+.breadcrumb-container {
+  color: rgba(29, 27, 32, 0.4);
+  font-size: 0.7rem;
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px !important;
+
+    .home-icon {
+      font-size: 0.7rem;
+      margin-right: 5px;
+    }
+  }
+
+  .breadcrumb-item {
+    cursor: pointer;
+    font-weight: 500;
+    padding-left: 2px !important;
+  }
+  .breadcrumb-item.active {
+    color: rgba(29, 27, 32, 0.4) !important;
+    cursor: default;
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    float: left;
+    color: rgba(29, 27, 32, 0.4) !important;
+    padding-right: 2px !important;
+  }
+}
+.accordion-button:not(.collapsed) {
+    color: black !important;
+}

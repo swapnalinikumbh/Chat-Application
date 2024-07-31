@@ -1,0 +1,44 @@
+.main-container {
+  .main-subcontainer {
+    display: flex;
+    justify-content: space-between;
+    // align-items: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .maincard-leftside {
+      //   flex: 1;
+      font-size: 20px;
+
+      .maincard-title {
+        cursor: pointer;
+        display: flex;
+        gap: 0.1rem;
+        align-items: center;
+
+        i {
+          color: black;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .maincard-rightside {
+      flex: 1;
+      font-size: 14px;
+      font-style: normal;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 568px) {
+    .main-subcontainer {
+      display: block;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
